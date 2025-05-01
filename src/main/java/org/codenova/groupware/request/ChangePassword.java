@@ -14,8 +14,8 @@ public class ChangePassword {
     @NotBlank
     private String oldPassword;
 
+//    @Pattern(regexp = "(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).+")      // 정규표현식 = 문자열이 특정 형태에 부합하는지 확인할때 사용하는 표현식
     @NotBlank
-    @Pattern(regexp = "(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).+")      // 정규표현식 = 문자열이 특정 형태에 부합하는지 확인할때 사용하는 표현식
     private String newPassword;
 }
 
