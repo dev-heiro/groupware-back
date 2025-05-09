@@ -18,11 +18,10 @@ public class NoteStatus {
     private Long id;
 
     @ManyToOne
-    private Employee receiver;
-
-    @ManyToOne
     private Note note;
 
+    @ManyToOne
+    private Employee receiver;
 
     private Boolean isRead;
 
